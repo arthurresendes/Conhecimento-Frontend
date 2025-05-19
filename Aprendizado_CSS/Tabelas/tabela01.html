@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilizando tabelas</title>
 </head>
+<style>
+    table {
+        width: 100%;
+        /*border-collapse: collapse; Junta as bordas*/
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    th {
+        text-transform: uppercase;
+        /*Transforma letras em tamanhos , maiusculas , etc*/
+        border-bottom: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 90%;
+        letter-spacing: 0.1em;
+        /*Espaçamento entre as letras*/
+    }
+
+    tr.alternado {
+        background-color: #efefef;
+    }
+
+    .numero {
+        text-align: right;
+    }
+
+    tr:hover {
+        background-color: #c3e6c5;
+        animation-duration: .3s;
+    }
+</style>
+
 <body>
-    
+    <table>
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th class="numero">Preço</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Notebook</td>
+            <td class="numero">R$ 2.500</td>
+        </tr>
+        <tr class="alternado">
+            <td>002</td>
+            <td>Tablet</td>
+            <td class="numero">R$ 1.500</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Iphone</td>
+            <td class="numero">R$ 3.500</td>
+        </tr>
+        <tr class="alternado">
+            <td>004</td>
+            <td>Nexus</td>
+            <td class="numero">R$ 3.500</td>
+        </tr>
+    </table>
 </body>
+
 </html>
