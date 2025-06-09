@@ -1,13 +1,12 @@
-body,
-html {
+/* style.css */
+body, html {
     margin: 0;
-    font: 16px "Arial", sans-serif;
+    font: 16px Arial, sans-serif;
     height: 100%;
     color: #777;
 }
 
 .conteudo {
-    color: #777;
     background-color: white;
     text-align: justify;
     padding: 50px 80px;
@@ -17,19 +16,52 @@ html {
     text-transform: uppercase;
     color: #111;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .caixa1,
-.caixa2 {
-    height: 100%;
+.caixa2,
+.caixa3,
+.caixa4 {
+    position: relative;
+    height: 100vh; /* 100% da altura da tela */
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* não repete a imagem */
+    background-size: cover; /* cobre toda a div sem repetir */
+    background-position: center; /* centraliza a imagem */
+    opacity: 0.9;
 }
 
 .caixa1 {
-    background:url(imagens/imagem1.jpg) fixed
+    background-image: url("imagens/imagem1.jpg");
+    z-index: 0;
 }
 
 .caixa2 {
-    background:url(imagens/imagem2.jpg) fixed;
+    background-image: url("imagens/imagem2.jpg");
+}
+
+.caixa3 {
+    background-image: url("imagens/imagem3.jpg");
+}
+
+.caixa4 {
+    background-image: url("imagens/imagem4.jpg");
+}
+
+.conteudo-titulo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #111111a7;
+    padding: 5px 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    z-index: 1;
+}
+
+h2{
+    text-transform: uppercase;
 }
