@@ -1,0 +1,35 @@
+body,
+html {
+    margin: 0;
+    font: 16px "Arial", sans-serif;
+    height: 100%;
+    color: #777;
+}
+
+.conteudo {
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+.conteudo h3 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.caixa1,
+.caixa2 {
+    height: 100%;
+}
+
+.caixa1 {
+    background:url(imagens/imagem1.jpg) fixed
+}
+
+.caixa2 {
+    background:url(imagens/imagem2.jpg) fixed;
+}
