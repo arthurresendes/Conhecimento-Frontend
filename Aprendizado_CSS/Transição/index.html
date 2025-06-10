@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transição</title>
+    <style>
+        .caixa {
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 10px;
+        }
+
+        .caixa:hover {
+            width: 400px;
+            height: 400px;
+            background: blue;
+            transition: all 5s;
+            border-radius: 50%;
+        }
+
+        @keyframes caixa-dois {
+            from {
+                width: 200px;
+                height: 200px;
+            }
+
+            to {
+                background: blueviolet;
+                width: 400px;
+                height: 400px;
+                border-radius: 70%;
+            }
+        }
+
+        .caixa2 {
+            width: 200px;
+            height: 200px;
+            background: rgb(0, 255, 72);
+            margin: 10px;
+        }
+
+        .caixa2 {
+            animation-name: caixa-dois;
+            animation-duration: 5s;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa">
+
+    </div>
+    <div class="caixa2">
+
+    </div>
+</body>
+
+</html>
