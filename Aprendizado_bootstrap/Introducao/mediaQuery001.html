@@ -50,32 +50,41 @@
             }
         }
 
-        /* Small devices (Landscape Phones) */
-        @media () {}
+        /* Small devices (Landscape Phones) 
+        @media (max-width: 767px) {
+            body{
+                background: purple;
+            }
+        }
 
-        /* Medium devices (Tablets) */
-        @media () {}
-
-        /* Large devices (Desktops) */
-        @media () {}
-
+        */
 
 
         /******************************************/
-        /*Extra small devices (portrait phones, menor que 576px)*/
-        @media () {}
+        /* Extra small devices (portrait phones, menor que 576px) */
+        @media (max-width: 575.98px) {
+            /* ... estilos específicos ... */
+        }
 
-        /*Small devices (landscape phones, 576px e maiores)*/
-        @media () and () {}
+        /* Small devices (landscape phones, 576px e maiores até 767.98px) */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            /* ... estilos específicos ... */
+        }
 
-        /*Medium devices (tablets, 768px e maiores)*/
-        @media () and () {}
+        /* Medium devices (tablets, 768px e maiores até 991.98px) */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            /* ... estilos específicos ... */
+        }
 
-        /*Large devices (desktops, 992px e maiores)*/
-        @media () and () {}
+        /* Large devices (desktops, 992px e maiores até 1199.98px) */
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            /* ... estilos específicos ... */
+        }
 
-        /*Extra large devices (large desktops, 1200px  e maiores)*/
-        @media () {}
+        /* Extra large devices (large desktops, 1200px  e maiores) */
+        @media (min-width: 1200px) {
+            /* ... estilos específicos ... */
+        }
     </style>
 
 </head>
