@@ -1,0 +1,18 @@
+#home{
+    background-color: #ffc107;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home h1 ,h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.334);
+}
+
+.caixa{
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+footer{
+    background-color: rgba(232, 232, 232, 0.501);
+}
