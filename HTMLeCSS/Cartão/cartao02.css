@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(0, 0, 0, 0.907);
+}
+
+.cartao{
+    width:200px ;
+    height:250px ;
+    border: 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(130deg , rgb(119, 119, 119), rgba(54, 54, 54, 0.893));
+    font-weight: bold; 
+    color: rgba(0, 0, 0, 0.8);
+    border-left-color: rgba(255, 255, 255, 0.2);
+    border-top-color: rgba(255, 255, 255, 0.403);
+    box-shadow: 1px 1px 2px white;
+}
+
+.cartao  p{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    transform: translate(0%, 80%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 1px 1px 5px black;
+}
+
+    .cartao:hover{
+        width: 250px ;
+        height: 300px ;
+        transition: .3s;
+        box-shadow: 2px 2px 7px white;
+    }
+    .cartao:hover p{
+        transform: translate(0%, 110%);
+        transition: .5s;
+    }
