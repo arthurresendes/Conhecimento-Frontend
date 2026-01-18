@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="shortcut icon" href="jogos.ico" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <h1>JOGO DA VELHA:</h1>
+
+      <div id="game">
+        <div class="row">
+               <button>
+                <div class="cell" onclick="playMove(0, 0)"></div>
+              </button>
+               <button>
+                <div class="cell" onclick="playMove(0, 1)"></div>
+                </button>
+                   <button>
+                      <div class="cell" onclick="playMove(0, 2)"></div>
+                   </button>
+  
+        </div>
+          <div class="row">
+                     <button>
+                       <div class="cell" onclick="playMove(1, 0)"></div>
+                    </button>
+                     <button>
+                     <div class="cell" onclick="playMove(1, 1)"></div>
+                    </button>
+                   <button>
+                    <div class="cell" onclick="playMove(1, 2)"></div>
+                    </button>
+        </div>
+          <div class="row">
+                         <button>
+                         <div class="cell" onclick="playMove(2, 0)"></div>
+                      </button>
+                       <button>
+                         <div class="cell" onclick="playMove(2, 1)"></div>
+                       </button>
+                      <button>
+                       <div class="cell" onclick="playMove(2, 2)"></div>
+                     </button>
+        </div>
+      </div>
+  </main>
+  <script src="script2.js"></script>
+</body>
+</html>
